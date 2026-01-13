@@ -27,6 +27,9 @@ setopt HIST_REDUCE_BLANKS
 # Do not show repeated history entries when doing a search
 setopt HIST_FIND_NO_DUPS
 
+# Do not add new history entry if it duplicates THE last one
+setopt HIST_IGNORE_DUPS
+
 # Do not save command that start with space, useful for sensitive data
 setopt HIST_IGNORE_SPACE
 

@@ -129,3 +129,12 @@ export NVM_DIR="$HOME/.nvm"
 
 # ripgrep
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
+
+. "$HOME/.cargo/env"
+
+# asdf
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"
+
+# Disable accidental terminal freeze after Ctrl+S
+stty -ixon

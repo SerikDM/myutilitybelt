@@ -28,6 +28,14 @@
 
     textconv = "ansible-vault view"
 
+[diff "sops"]
+
+    textconv = "sops --decrypt"
+
+[diff "gpg"]
+
+    textconv = "gpg --no-tty --decrypt --quiet"
+
 [difftool]
 
     # This is need to Vimdiff not prompt for saving everytime

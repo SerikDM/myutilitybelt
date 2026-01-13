@@ -84,3 +84,7 @@ set path+=**,.modman/**
 " === AUTOCOMMANDS ===
 " I never use modula2 files, but a lot of markdown with .md extension
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+
+
+" Let 'vim -p *' open more tabs in same buffer
+set tabpagemax=100

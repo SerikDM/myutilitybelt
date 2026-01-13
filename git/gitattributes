@@ -1,5 +1,8 @@
-*.vault.yml diff=ansible-vault merge=binary
-secrets.yml diff=ansible-vault merge=binary
 
 *.ex diff=elixir
 *.exs diff=elixir
+
+infra/terraform/**/secrets-*.yml diff=sops
+infra/terraform/**/secrets.yml diff=sops
+
+*.asc diff=gpg
